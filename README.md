@@ -100,3 +100,7 @@ php artisan migrate
 ```
 php artisan make:controller Api/TweetController
 ```
+
+2) TweetController を修正
+
+3) routes/api.php を修正
