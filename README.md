@@ -92,3 +92,11 @@ php artisan make:model Tweet -m
 ```
 php artisan migrate
 ```
+
+## APIコントローラー作成
+
+1) Api/TweetController を作成
+
+```
+php artisan make:controller Api/TweetController
+```
