@@ -1,6 +1,7 @@
 
 ## Laravelサーバの作成
 1) next_tweet フォルダをVSCodeで開く
+
 2) ターミナルを開いて、Laravelプロジェクトを作成
 
 ```
@@ -42,3 +43,29 @@ composer require laravel/breeze --dev
 ```
 php artisan breeze:install blade
 ```
+
+3) ブラウザで確認
+
+http://localhost:8000
+
+
+## DB作成
+1) DBマイグレートする
+
+```
+php artisan migrate
+```
+
+2) phpMyAdminでテーブル確認する
+
+3) Registerからユーザ登録する
+
+4) Tweetモデルの作成
+
+```
+php artisan make:model Tweet -m
+```
+
+5) app/Models/Tweet.php の修正
+
+
