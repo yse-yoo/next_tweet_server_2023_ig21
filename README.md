@@ -86,3 +86,9 @@ php artisan make:model Tweet -m
             $table->text('message');
         });
 ```
+
+7) マイグレートする
+
+```
+php artisan migrate
+```
