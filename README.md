@@ -68,4 +68,21 @@ php artisan make:model Tweet -m
 
 5) app/Models/Tweet.php の修正
 
+```
+    protected $fillable = [
+        'user_id',
+        'message',
+    ];
+```
 
+6) database/migrations/xxx_create_tweets_xxx.php を修正
+
+```
+        Schema::create('tweets', function (Blueprint $table) {
+            $table->id();
+            $table->dateTime('created_at', $precision = 0);
+            $table->dateTime('updated_at', $precision = 0);
+            $table->unsignedInteger('user_id');
+            $table->text('message');
+        });
+```
